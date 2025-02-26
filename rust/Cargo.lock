@@ -102,7 +102,10 @@ dependencies = [
  "mimalloc-rust",
  "napi",
  "napi-build",
+ "napi-build-ohos",
  "napi-derive",
+ "napi-derive-ohos",
+ "napi-ohos",
  "parse_ast",
  "xxhash",
 ]
@@ -187,6 +190,15 @@ name = "convert_case"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec182b0ca2f35d8fc196cf3404988fd8b8c739a4d270ff118a398feb0cbec1ca"
+dependencies = [
+ "unicode-segmentation",
+]
+
+[[package]]
+name = "convert_case"
+version = "0.7.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bb402b8d4c85569410425650ce3eddc7d698ed96d39a73f941b08fb63082f1e7"
 dependencies = [
  "unicode-segmentation",
 ]
@@ -613,13 +625,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "db836caddef23662b94e16bf1f26c40eceb09d6aee5d5b06a7ac199320b69b19"
 
 [[package]]
+name = "napi-build-ohos"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7ad5bf214216afe5b572da0bcd5cab932d17cbcca3dbe82991db0d765a764c8a"
+
+[[package]]
 name = "napi-derive"
 version = "2.16.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7cbe2585d8ac223f7d34f13701434b9d5f4eb9c332cccce8dee57ea18ab8ab0c"
 dependencies = [
  "cfg-if",
- "convert_case",
+ "convert_case 0.6.0",
  "napi-derive-backend",
  "proc-macro2",
  "quote",
@@ -632,7 +650,7 @@ version = "1.0.75"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1639aaa9eeb76e91c6ae66da8ce3e89e921cd3885e99ec85f4abacae72fc91bf"
 dependencies = [
- "convert_case",
+ "convert_case 0.6.0",
  "once_cell",
  "proc-macro2",
  "quote",
@@ -642,10 +660,57 @@ dependencies = [
 ]
 
 [[package]]
+name = "napi-derive-backend-ohos"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bd974d6316c670078fa15276c6134e5b45142b393db350b24682ae613733cdac"
+dependencies = [
+ "convert_case 0.7.1",
+ "once_cell",
+ "proc-macro2",
+ "quote",
+ "semver 1.0.25",
+ "syn",
+]
+
+[[package]]
+name = "napi-derive-ohos"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a3a8b89bbc39f81c472e76813dcd837f311aae7850a24a01d0bf5858221b1fd2"
+dependencies = [
+ "convert_case 0.7.1",
+ "napi-derive-backend-ohos",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "napi-ohos"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32036ede4ef064610304337831e9d49dac23e7edc4e9efd076c8259eab6d19a9"
+dependencies = [
+ "bitflags",
+ "ctor",
+ "napi-sys-ohos",
+]
+
+[[package]]
 name = "napi-sys"
 version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "427802e8ec3a734331fec1035594a210ce1ff4dc5bc1950530920ab717964ea3"
+dependencies = [
+ "libloading",
+]
+
+[[package]]
+name = "napi-sys-ohos"
+version = "1.0.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0e18642400316f886a6f153b2fbc48f5652d0e117803057005f89f0e48217d64"
 dependencies = [
  "libloading",
 ]

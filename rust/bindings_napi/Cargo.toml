@@ -14,6 +14,8 @@ napi = { version = "2.16.16", default-features = false, features = ["napi4"] }
 napi-derive = "2.16.13"
 parse_ast = { path = "../parse_ast" }
 xxhash = { path = "../xxhash" }
+napi-derive-ohos = "1.0.4"
+napi-ohos = "1.0.4"
 
 [target.'cfg(not(any(target_os = "linux", target_os = "freebsd")))'.dependencies]
 mimalloc-rust = { version = "0.2.1" }
@@ -23,3 +25,4 @@ mimalloc-rust = { version = "0.2.1", features = ["local-dynamic-tls"] }
 
 [build-dependencies]
 napi-build = "2.1.4"
+napi-build-ohos = "1.0.4"

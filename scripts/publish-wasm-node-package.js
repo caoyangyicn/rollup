@@ -46,7 +46,7 @@ export default async function publishWasmNodePackage() {
 
 	await Promise.all([
 		writeFile(getOutputPath('dist', 'native.js'), nativeJsContent.trimStart()),
-		cp('artifacts/bindings-wasm-node/wasm-node', getOutputPath('dist', 'wasm-node'), {
+		cp('wasm-node', getOutputPath('dist', 'wasm-node'), {
 			recursive: true
 		})
 	]);
