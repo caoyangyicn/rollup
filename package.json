@@ -1,6 +1,6 @@
 {
   "name": "rollup",
-  "version": "4.34.8",
+  "version": "4.34.8-ohos",
   "description": "Next-generation ES module bundler",
   "main": "dist/rollup.js",
   "module": "dist/es/rollup.js",
@@ -34,7 +34,8 @@
         "x86_64-pc-windows-msvc",
         "x86_64-unknown-freebsd",
         "x86_64-unknown-linux-gnu",
-        "x86_64-unknown-linux-musl"
+        "x86_64-unknown-linux-musl",
+        "aarch64-unknown-linux-ohos"
       ]
     }
   },
@@ -42,6 +43,7 @@
     "build": "concurrently -c green,blue \"npm run build:wasm\" \"npm:build:ast-converters\" && concurrently -c green,blue \"npm run build:napi -- --release\" \"npm:build:js\" && npm run build:copy-native",
     "build:quick": "concurrently -c green,blue 'npm:build:napi' 'npm:build:cjs' && npm run build:copy-native",
     "build:napi": "napi build --platform --dts native.d.ts --js false --cargo-cwd rust -p bindings_napi --cargo-name bindings_napi",
+    "build:openharmony": "napi build --platform aarch64-unknown-linux-ohos --dts native.d.ts --js false --cargo-cwd rust -p bindings_napi --cargo-name bindings_napi",
     "build:wasm": "cross-env RUSTFLAGS=\"-C opt-level=z\" wasm-pack build rust/bindings_wasm --out-dir ../../wasm --target web --no-pack && shx rm wasm/.gitignore",
     "build:wasm:node": "wasm-pack build rust/bindings_wasm --out-dir ../../wasm-node --target nodejs --no-pack && shx rm wasm-node/.gitignore",
     "update:napi": "npm run build:napi && npm run build:copy-native",
