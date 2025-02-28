@@ -1,16 +1,19 @@
-use napi::bindgen_prelude::*;
-use napi_derive::napi;
+// use napi::bindgen_prelude::*;
+// use napi_derive::napi;
+use napi_derive_ohos::napi;
+use napi_ohos::bindgen_prelude::*;
+//
 use parse_ast::parse_ast;
 
-#[cfg(all(
-  not(all(target_os = "linux", target_env = "musl", target_arch = "aarch64")),
-  not(all(target_os = "linux", target_arch = "loongarch64")),
-  not(all(target_os = "freebsd", target_arch = "aarch64")),
-  not(debug_assertions)
-))]
+// #[cfg(all(
+//   not(all(target_os = "linux", target_env = "musl", target_arch = "aarch64")),
+//   not(all(target_os = "linux", target_arch = "loongarch64")),
+//   not(all(target_os = "freebsd", target_arch = "aarch64")),
+//   not(debug_assertions)
+// ))]
 #[global_allocator]
 static ALLOC: mimalloc_rust::GlobalMiMalloc = mimalloc_rust::GlobalMiMalloc;
-
+//
 pub struct ParseTask {
   pub code: String,
   pub allow_return_outside_function: bool,
@@ -74,3 +77,4 @@ pub fn xxhash_base36(input: Uint8Array) -> String {
 pub fn xxhash_base16(input: Uint8Array) -> String {
   xxhash::xxhash_base16(&input)
 }
+

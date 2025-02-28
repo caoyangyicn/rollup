@@ -27,7 +27,7 @@ const bindingsByPlatformAndArch = {
 		x64: { base: 'linux-x64-gnu', musl: 'linux-x64-musl' }
 	},
 	openharmony: {
-		arm64: { base: 'openharmony-arm64' }
+		arm64: { base: 'linux-arm64-ohos' }
 	},
 	win32: {
 		arm64: { base: 'win32-arm64-msvc' },
