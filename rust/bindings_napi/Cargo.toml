@@ -3,6 +3,8 @@ name = "bindings_napi"
 version = "0.0.0"
 edition = "2021"
 
+[features]
+ohos = ["dep:ohos-node-bindgen", "dep:socket2"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 #[lib]
@@ -30,10 +32,16 @@ edition = "2021"
 crate-type=["cdylib"]
 
 [dependencies]
+mimalloc-rust = { version = "0.2.1", features = ["local-dynamic-tls"] }
 napi-derive-ohos = "1.0.4"
 napi-ohos = "1.0.4"
 xxhash = { path = "../xxhash" }
 parse_ast = { path = "../parse_ast" }
+ohos-node-bindgen = { version = "6.0.3", optional = true }
+socket2 = { version = "0.4.10", optional = true }
 
 [build-dependencies]
 napi-build-ohos = "1.0.4"
+
+[patch.crates-io]
+socket2 = { version = "0.4.10", git = "https://github.com/stuartZhang/socket2.git", branch = "v0.4.x" }

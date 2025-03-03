@@ -1,0 +1,406 @@
+    1  2025-02-28 18:57:36  
+    2  2025-02-26 07:43:36 sudo apt update
+    3  2025-02-26 07:43:58 sudo apt upgrade
+    4  2025-02-26 07:48:24 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    5  2025-02-26 07:48:54 ssh-keygen -t rsa -b 4096 -C "798188057@qq.com"
+    6  2025-02-26 07:49:02 cd .ssh
+    7  2025-02-26 07:49:03 ls
+    8  2025-02-26 07:49:08 cat id_rsa.pub 
+    9  2025-02-26 07:49:20 ssh-keygen -t rsa -b 4096 -C "798188057@qq.com"
+   10  2025-02-26 07:49:38 cat id_rsa.pub 
+   11  2025-02-26 07:50:15 cd ../
+   12  2025-02-26 07:50:59 git clone git@github.com:caoyangyicn/rollup.git
+   13  2025-02-26 07:55:30 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+   14  2025-02-26 07:55:39 \. "$HOME/.nvm/nvm.sh"
+   15  2025-02-26 07:55:54 nvm install 22
+   16  2025-02-26 07:56:43 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   17  2025-02-26 07:57:16 . "$HOME/.cargo/env"
+   18  2025-02-26 07:57:21 cd rollup/
+   19  2025-02-26 07:57:27 npm i
+   20  2025-02-26 08:25:01 npm run build
+   21  2025-02-26 08:30:52 npm run build:openharmony
+   22  2025-02-26 08:32:19 npm i
+   23  2025-02-26 08:33:48 npm run build:napi
+   24  2025-02-26 08:34:33 npm run build:openharmony
+   25  2025-02-26 08:37:52 cd 。。、
+   26  2025-02-26 08:37:54 cd ../
+   27  2025-02-26 08:37:58 cd ubuntu/
+   28  2025-02-26 08:38:04 cd rollup/
+   29  2025-02-26 08:38:07 git add .
+   30  2025-02-26 08:38:17 git commit -m "1111111"
+   31  2025-02-26 08:40:24 git add .
+   32  2025-02-26 08:40:26 git commit -m "1111111"
+   33  2025-02-26 08:40:33 git push
+   34  2025-02-26 13:17:33 rustup target add aarch64-unknown-linux-ohos armv7-unknown-linux-ohos x86_64-unknown-linux-ohos
+   35  2025-02-26 13:18:05 rustup target list |grep ohos 
+   36  2025-02-26 13:18:52 npm run build:openharmony
+   37  2025-02-26 13:22:37 npm run build:napi
+   38  2025-02-26 13:23:58 napi build --platform x86_64-linux-android --dts native.d.ts --js false --cargo-cwd rust -p bindings_napi --cargo-name bindings_napi
+   39  2025-02-26 13:29:10 napi build --platform aarch64-linux-android --dts native.d.ts --js false --cargo-cwd rust -p bindings_napi --cargo-name bindings_napi
+   40  2025-02-26 13:30:42 npm run build:napi
+   41  2025-02-26 13:32:02 npm run build:openharmony
+   42  2025-02-26 18:57:14 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+   43  2025-02-26 18:57:15 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+   44  2025-02-26 18:57:39 cd  .cargo
+   45  2025-02-26 18:57:50 vim config.toml
+   46  2025-02-26 18:58:28 cd ../
+   47  2025-02-26 18:58:30 rustup target add aarch64-unknown-linux-ohos
+   48  2025-02-26 18:58:30 rustup target add armv7-unknown-linux-ohos
+   49  2025-02-26 18:58:41 rustup target add x86_64-unknown-linux-ohos
+   50  2025-02-26 19:13:11 cd .cargo
+   51  2025-02-26 19:13:19 vim config.toml 
+   52  2025-02-26 19:25:59 cd ../
+   53  2025-02-26 19:26:00 ls
+   54  2025-02-26 19:26:01 cd sdk
+   55  2025-02-26 19:26:24 ls
+   56  2025-02-26 19:26:31 unzip native-linux-x64-5.0.2.123-Release.zip 
+   57  2025-02-26 19:27:16 export OHOS_NDK_HOME=/Users/xiaolei/OpenHarmony/sdk/HarmonyOS-NEXT-DB1/openharmony
+   58  2025-02-26 19:27:26 pwd
+   59  2025-02-26 19:27:50 export OHOS_NDK_HOME=/home/ubuntu/sdk
+   60  2025-02-26 19:28:05 cd ../
+   61  2025-02-26 19:28:24 cd .cargo/
+   62  2025-02-26 19:28:37 vim config.toml 
+   63  2025-02-26 19:29:03 cd ../
+   64  2025-02-26 19:29:06 cargo new <库名称> --lib
+   65  2025-02-26 19:29:13 cargo new demo --lib
+   66  2025-02-26 19:29:32 cd demo
+   67  2025-02-26 19:29:33 ls
+   68  2025-02-26 19:29:36 vim Cargo.toml 
+   69  2025-02-26 19:30:24 cargo add napi-ohos napi-derive-ohos
+   70  2025-02-26 19:30:38 cargo add napi-build-ohos --build
+   71  2025-02-26 19:31:07 vim build.rs
+   72  2025-02-26 19:32:08 cd src
+   73  2025-02-26 19:32:12 ls
+   74  2025-02-26 19:32:15 vim lib.rs 
+   75  2025-02-26 19:32:46 cd ..
+   76  2025-02-26 19:32:53 build --target aarch64-unknown-linux-ohos
+   77  2025-02-26 19:33:29 build
+   78  2025-02-26 19:34:33 cargo build --target aarch64-unknown-linux-ohos
+   79  2025-02-26 19:35:43 echo $OHOS_NDK_HOME
+   80  2025-02-26 19:36:27 cd ~/.cargo/
+   81  2025-02-26 19:36:31 vim config.toml 
+   82  2025-02-26 19:37:52 cd ../
+   83  2025-02-26 19:37:56 cd demo/
+   84  2025-02-26 19:37:59 cargo build --target aarch64-unknown-linux-ohos
+   85  2025-02-26 19:38:06 ls
+   86  2025-02-26 19:38:11 cd target/
+   87  2025-02-26 19:38:12 ls
+   88  2025-02-26 19:38:54 cargo build --target aarch64-unknown-linux-ohos --release
+   89  2025-02-26 19:39:04 ls
+   90  2025-02-26 19:48:49 npm run build
+   91  2025-02-26 19:51:17 cd ~
+   92  2025-02-26 19:51:21 cd demo
+   93  2025-02-26 19:51:32 vim Cargo.
+   94  2025-02-26 19:51:42 ls
+   95  2025-02-26 19:57:13 npm run build:openharmony
+   96  2025-02-26 20:06:40 npm run build
+   97  2025-02-26 20:15:16 npm config get registry
+   98  2025-02-26 20:16:02 npm adduser --registry http://120.53.122.14:4873/
+   99  2025-02-26 20:16:37 npm publish --registry http://120.53.122.14:4873/
+  100  2025-02-26 20:17:15 export ROLLUP_RELEASE=releasing
+  101  2025-02-26 20:17:18 npm publish --registry http://120.53.122.14:4873/
+  102  2025-02-26 20:21:59 npm run build:wasm
+  103  2025-02-26 20:22:27 npm publish --registry http://120.53.122.14
+  104  2025-02-26 20:23:31 npm adduser --registry http://120.53.122.14:4873/
+  105  2025-02-26 20:23:48 npm publish --registry http://120.53.122.14
+  106  2025-02-26 20:24:17 npm publish --registry http://120.53.122.14:4873/
+  107  2025-02-26 20:25:20 npm run build:wasm:node
+  108  2025-02-26 20:26:31 npm publish --registry http://120.53.122.14:4873/
+  109  2025-02-26 20:35:01 cd rollup/
+  110  2025-02-26 20:35:05 git add 。
+  111  2025-02-26 20:35:09 git add .
+  112  2025-02-26 20:35:48 git commit -m "1111111"
+  113  2025-02-26 20:36:44 git add .
+  114  2025-02-26 20:36:46 git commit -m "1111111"
+  115  2025-02-26 20:37:21 git add .
+  116  2025-02-26 20:37:23 git commit -m "1111111"
+  117  2025-02-26 20:37:29 git push
+  118  2025-02-26 19:51:49 vim Cargo.toml 
+  119  2025-02-27 09:30:47 ls
+  120  2025-02-27 09:31:01 cd sdk
+  121  2025-02-27 09:31:02 ls
+  122  2025-02-27 09:31:28 pwd
+  123  2025-02-27 09:31:50 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  124  2025-02-27 09:33:07 cd ~/rollup
+  125  2025-02-27 09:33:30 cd rust
+  126  2025-02-27 09:33:31 ls
+  127  2025-02-27 09:33:47 cd bindings_napi/
+  128  2025-02-27 09:34:22 build --target aarch64-unknown-linux-ohos --release
+  129  2025-02-27 09:34:44 cargo build --target aarch64-unknown-linux-ohos --release
+  130  2025-02-27 09:37:03 echoOHOS_NDK_HOME
+  131  2025-02-27 09:37:08 echo $OHOS_NDK_HOME
+  132  2025-02-27 09:37:22 clang
+  133  2025-02-27 09:39:01 find / -name aarch64-unknown-linux-ohos-clang 2>/dev/null
+  134  2025-02-27 09:40:11 cd ~
+  135  2025-02-27 09:41:55 cd roll
+  136  2025-02-27 09:41:59 cd rollup/
+  137  2025-02-27 09:42:07 cd rust/
+  138  2025-02-27 09:42:09 ls
+  139  2025-02-27 09:42:22 cd bindings_napi
+  140  2025-02-27 09:42:31 cargo build --target aarch64-unknown-linux-ohos --release
+  141  2025-02-27 09:43:44 cargo add napi-ohos napi-derive-ohos
+  142  2025-02-27 09:44:06 cargo add napi-build-ohos --build
+  143  2025-02-27 09:44:11 cargo build --target aarch64-unknown-linux-ohos --release
+  144  2025-02-27 09:56:04 cargo build --target aarch64-unknown-linux-ohos
+  145  2025-02-27 10:01:15 cargo clean
+  146  2025-02-27 10:01:20 cargo build --target aarch64-unknown-linux-ohos
+  147  2025-02-27 10:02:35 cargo clean
+  148  2025-02-27 10:02:40 cargo build --target aarch64-unknown-linux-ohos
+  149  2025-02-27 12:50:28 cd rust
+  150  2025-02-27 12:50:37 cd bindings_napi/
+  151  2025-02-27 12:50:57 cargo  build --target aarch64-unknown-linux-ohos
+  152  2025-02-27 12:51:20 cargo clean
+  153  2025-02-27 12:51:25 cargo  build --target aarch64-unknown-linux-ohos
+  154  2025-02-27 12:52:25 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  155  2025-02-27 12:52:27 cargo  build --target aarch64-unknown-linux-ohos
+  156  2025-02-27 12:52:39 cargo clean
+  157  2025-02-27 12:52:46 cargo build --target aarch64-unknown-linux-ohos
+  158  2025-02-27 12:53:32 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+  159  2025-02-27 12:54:01 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+  160  2025-02-27 12:58:14 cargo build --target aarch64-unknown-linux-ohos
+  161  2025-02-27 12:58:44 cargo add napi-ohos napi-derive-ohos
+  162  2025-02-27 12:58:56 cargo build --target aarch64-unknown-linux-ohos
+  163  2025-02-27 12:59:20 cargo add napi-build-ohos --build
+  164  2025-02-27 12:59:32 cargo build --target aarch64-unknown-linux-ohos
+  165  2025-02-27 13:00:39 cargo clean
+  166  2025-02-27 13:00:42 cargo build --target aarch64-unknown-linux-ohos
+  167  2025-02-27 13:01:37 cargo clean
+  168  2025-02-27 13:01:39 cargo build --target aarch64-unknown-linux-ohos
+  169  2025-02-27 13:02:48 cargo clean
+  170  2025-02-27 13:02:50 cargo build --target aarch64-unknown-linux-ohos
+  171  2025-02-27 13:06:33 cargo clean
+  172  2025-02-27 13:06:34 cargo build --target aarch64-unknown-linux-ohos
+  173  2025-02-27 13:09:35 cargo clean
+  174  2025-02-27 13:09:39 cd ../
+  175  2025-02-27 13:10:35 cargo build --target aarch64-unknown-linux-ohos
+  176  2025-02-27 13:11:33 cd xxhash/
+  177  2025-02-27 13:11:36 cargo build --target aarch64-unknown-linux-ohos
+  178  2025-02-27 13:12:27 cd ../
+  179  2025-02-27 13:12:30 cargo clean
+  180  2025-02-27 13:12:35 cd xxhash/
+  181  2025-02-27 13:12:39 cargo build --target aarch64-unknown-linux-ohos
+  182  2025-02-27 13:12:57 cd ../parse_ast/
+  183  2025-02-27 13:13:01 cargo build --target aarch64-unknown-linux-ohos
+  184  2025-02-27 13:15:03 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  185  2025-02-27 13:15:05 cargo build --target aarch64-unknown-linux-ohos
+  186  2025-02-27 13:15:33 cd ../
+  187  2025-02-27 13:15:42 cargo clean
+  188  2025-02-27 13:16:09 cargo build --target aarch64-unknown-linux-ohos
+  189  2025-02-27 13:20:34 cargo clean
+  190  2025-02-27 13:20:49 cargo build --target aarch64-unknown-linux-ohos
+  191  2025-02-27 13:22:34 cargo clean
+  192  2025-02-27 13:22:36 cargo build --target aarch64-unknown-linux-ohos
+  193  2025-02-27 13:23:49 cargo clean
+  194  2025-02-27 13:23:51 cargo build --target aarch64-unknown-linux-ohos
+  195  2025-02-27 13:24:39 cargo clean
+  196  2025-02-27 13:24:58 cargo build --target aarch64-unknown-linux-ohos --release
+  197  2025-02-27 13:28:30 ls
+  198  2025-02-27 13:28:35 cd demo
+  199  2025-02-27 13:28:36 ls
+  200  2025-02-27 13:28:44 cd target
+  201  2025-02-27 13:28:46 ls
+  202  2025-02-27 13:29:54 cargo clean
+  203  2025-02-27 13:30:33 cargo build --target aarch64-unknown-linux-ohos --release
+  204  2025-02-27 13:31:41 cargo clean
+  205  2025-02-27 13:31:44 cd ../
+  206  2025-02-27 13:31:49 npm run build
+  207  2025-02-27 13:42:03 npm run build:openharmony
+  208  2025-02-27 13:47:03 npm run build
+  209  2025-02-27 13:50:09 npm run build:openharmony
+  210  2025-02-27 14:11:46 ls
+  211  2025-02-27 14:13:33 npm run build:openharmony
+  212  2025-02-27 14:14:03 cd rollup
+  213  2025-02-27 14:15:15 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  214  2025-02-27 14:15:35 cd /home/ubuntu/sdk
+  215  2025-02-27 14:15:38 ls
+  216  2025-02-27 14:15:45 cd ~
+  217  2025-02-27 14:18:22 history
+  218  2025-02-27 14:19:11 cat histroy >> 1.txt
+  219  2025-02-27 14:19:24 histroy >> 1.txt
+  220  2025-02-27 14:19:57 history >> 1.txt
+  221  2025-02-27 14:20:02 ls
+  222  2025-02-27 14:21:17 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  223  2025-02-27 14:22:23 npm run build:openharmony
+  224  2025-02-27 14:22:32 cd rollup/
+  225  2025-02-27 14:22:36 npm run build:openharmony
+  226  2025-02-27 14:23:24 cd rust/
+  227  2025-02-27 14:23:42 cargo build --target aarch64-unknown-linux-ohos
+  228  2025-02-27 14:24:03 cd ../
+  229  2025-02-27 14:24:08 npm run build:openharmony
+  230  2025-02-27 14:25:46 sudo apt install zig
+  231  2025-02-27 14:26:01 sudo apt update
+  232  2025-02-27 14:26:07 sudo apt install zig
+  233  2025-02-27 16:22:15 ls
+  234  2025-02-27 16:22:26 cd rollup/
+  235  2025-02-27 16:22:27 ls
+  236  2025-02-27 16:22:37 cd rust/
+  237  2025-02-27 16:22:39 ls
+  238  2025-02-27 16:23:50 cargo build --target aarch64-unknown-linux-ohos
+  239  2025-02-27 16:24:23 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  240  2025-02-27 16:24:41 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  241  2025-02-27 16:24:44 cargo build --target aarch64-unknown-linux-ohos
+  242  2025-02-28 11:23:18 ls
+  243  2025-02-28 11:23:28 cd rollup/
+  244  2025-02-28 11:23:41 git add .
+  245  2025-02-28 11:23:52 git commit -m "11111"
+  246  2025-02-28 11:24:07 git push
+  247  2025-02-28 14:19:21 cd sdk
+  248  2025-02-28 14:19:23 pwd
+  249  2025-02-28 14:19:47 cd ../.cargo/
+  250  2025-02-28 14:19:48 ls
+  251  2025-02-28 14:19:55 cat config.toml 
+  252  2025-02-28 14:21:51 export OHOS_NDK_HOME=/home/ubuntu/sdk/
+  253  2025-02-28 14:22:06 export CC = /home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  254  2025-02-28 14:22:19 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  255  2025-02-28 14:22:32 cd ../rollup/
+  256  2025-02-28 14:22:51 export CXX=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang++
+  257  2025-02-28 14:23:04 export AR=/home/ubuntu/sdk/native/llvm/bin/llvm-ar
+  258  2025-02-28 14:23:16 export LINKER=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  259  2025-02-28 14:23:27 export ranlib=/home/ubuntu/sdk/native/llvm/bin/llvm-ranlib
+  260  2025-02-28 14:23:37 cd rust
+  261  2025-02-28 14:24:14 history > 1.txt
+  262  2025-02-28 14:56:24 cargo build --target aarch64-unknown-linux-ohos
+  263  2025-02-28 14:57:35 cargo clean
+  264  2025-02-28 14:57:40 cargo build --target aarch64-unknown-linux-ohos
+  265  2025-02-28 14:59:10 echo $CXX
+  266  2025-02-28 14:59:30 npm run build:openharmony
+  267  2025-02-28 14:59:40 ls
+  268  2025-02-28 14:59:56 cd ../
+  269  2025-02-28 14:59:59 npm run build:openharmony
+  270  2025-02-28 15:00:04 ls
+  271  2025-02-28 15:00:30 rm -rf rollup.linux-arm64-ohos.node
+  272  2025-02-28 15:00:33 npm run build:openharmony
+  273  2025-02-28 15:00:36 ls
+  274  2025-02-28 15:00:56 ls -l rollup.linux-arm64-ohos.node 
+  275  2025-02-28 15:07:58 apt update
+  276  2025-02-28 15:08:17 sudo apt update
+  277  2025-02-28 15:08:40 sudo apt install zig
+  278  2025-02-28 15:09:23 sudo apt install software-properties-common
+  279  2025-02-28 15:09:41 sudo add-apt-repository ppa:ziglang/zig -y
+  280  2025-02-28 15:10:54 wget https://ziglang.org/download/0.11.0/zig-linux-x86_64-0.11.0.tar.xz
+  281  2025-02-28 15:11:12 tar -xf zig-linux-x86_64-0.11.0.tar.xz
+  282  2025-02-28 15:11:39 sudo mv zig-linux-x86_64-0.11.0 /usr/local/zig
+  283  2025-02-28 15:12:11 echo 'export PATH=$PATH:/usr/local/zig' >> ~/.bashrc
+  284  2025-02-28 15:12:22 source ~/.bashrc
+  285  2025-02-28 15:12:25 zig
+  286  2025-02-28 15:12:48 npm i
+  287  2025-02-28 15:14:14 npm run build:openharmony
+  288  2025-02-28 15:16:08 npm install @napi-rs/cli
+  289  2025-02-28 15:16:16 npm run build:openharmony
+  290  2025-02-28 15:18:30 which rustc
+  291  2025-02-28 15:19:34 vim ~/.bashrc
+  292  2025-02-28 15:25:14 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  293  2025-02-28 15:25:21 export CXX=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang++
+  294  2025-02-28 15:25:28 export AR=/home/ubuntu/sdk/native/llvm/bin/llvm-ar
+  295  2025-02-28 15:25:40 export RANLIB=/home/ubuntu/sdk/native/llvm/bin/llvm-ranlib
+  296  2025-02-28 15:25:48 export LINKER=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  297  2025-02-28 15:26:19 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  298  2025-02-28 15:26:40 cd rollup/
+  299  2025-02-28 15:27:00 cd rust
+  300  2025-02-28 15:27:09 cargo clean
+  301  2025-02-28 15:27:26 cargo build --target aarch64-unknown-linux-ohos
+  302  2025-02-28 15:28:57 cargo build --target aarch64-unknown-linux-ohos --release
+  303  2025-02-28 15:32:15 npm run build:openharmony
+  304  2025-02-28 15:34:36 cd ../../
+  305  2025-02-28 15:34:42 cd demo
+  306  2025-02-28 15:34:46 ls
+  307  2025-02-28 15:34:56 cd target/
+  308  2025-02-28 15:34:58 ls
+  309  2025-02-28 15:36:13 rustup target list |grep ohos
+  310  2025-02-28 15:38:13 rustup component add rust-src
+  311  2025-02-28 15:38:32 export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+  312  2025-02-28 15:38:42 export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+  313  2025-02-28 15:39:58 cd ../../rollup/
+  314  2025-02-28 15:40:13 npm run build:openharmony
+  315  2025-02-28 15:41:06 echo $CC
+  316  2025-02-28 15:41:16 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  317  2025-02-28 15:41:26 export CXX=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang++
+  318  2025-02-28 15:41:33 export AR=/home/ubuntu/sdk/native/llvm/bin/llvm-ar
+  319  2025-02-28 15:41:40 export RANLIB=/home/ubuntu/sdk/native/llvm/bin/llvm-ranlib
+  320  2025-02-28 15:41:47 export LINKER=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  321  2025-02-28 15:41:57 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  322  2025-02-28 15:42:49 cd rollup/
+  323  2025-02-28 15:43:26 cd rust/
+  324  2025-02-28 15:43:34 cargo build --target aarch64-unknown-linux-ohos
+  325  2025-02-28 15:43:45 cargo clean
+  326  2025-02-28 15:43:49 cargo build --target aarch64-unknown-linux-ohos
+  327  2025-02-28 15:47:47 npm install @napi-rs/cli --save-dev
+  328  2025-02-28 15:48:45 npx napi build --platform aarch64-unknown-linux-ohos
+  329  2025-02-28 15:49:45 cd bindings_napi/
+  330  2025-02-28 15:49:50 npx napi build --platform aarch64-unknown-linux-ohos
+  331  2025-02-28 15:50:14 npm install @napi-rs/cli --save-dev
+  332  2025-02-28 15:50:18 npx napi build --platform aarch64-unknown-linux-ohos
+  333  2025-02-28 15:50:37 npm install @napi-rs/cli -g
+  334  2025-02-28 15:51:00 napi
+  335  2025-02-28 15:51:13 napi build --platform aarch64-unknown-linux-ohos
+  336  2025-02-28 15:51:37 npm init
+  337  2025-02-28 15:51:51 napi build --platform aarch64-unknown-linux-ohos
+  338  2025-02-28 15:53:34 napi build --platform aarch64-unknown-linux-ohos
+  339  2025-02-28 15:55:42 echo $CXX
+  340  2025-02-28 15:58:09 napi build --platform aarch64-unknown-linux-ohosnpx napi build --platform aarch64-unknown-linux-ohos --release
+  341  2025-02-28 15:58:15 npx napi build --platform aarch64-unknown-linux-ohos --release
+  342  2025-02-28 16:03:34 cargo clean
+  343  2025-02-28 16:06:24 npi
+  344  2025-02-28 16:06:37 npx napi
+  345  2025-02-28 16:09:22 npx napi build --target aarch64-unknown-linux-ohos --release
+  346  2025-02-28 16:10:30 cd ../../
+  347  2025-02-28 16:11:22 npm run build:openharmony
+  348  2025-02-28 16:15:07 cd rust
+  349  2025-02-28 16:15:18 cd bindings_napi/
+  350  2025-02-28 16:15:31 npx napi build --target aarch64-unknown-linux-ohos --release
+  351  2025-02-28 16:15:41 npm init
+  352  2025-02-28 16:15:50 npx napi build --target aarch64-unknown-linux-ohos --release
+  353  2025-02-28 16:19:27 npx napi build --platform --target aarch64-unknown-linux-ohos --release
+  354  2025-02-28 16:19:43 npx napi build --platform --target aarch64-unknown-linux-ohos
+  355  2025-02-28 16:22:21 export npm_config_platform=linux
+  356  2025-02-28 16:22:33 export npm_config_arch=arm64
+  357  2025-02-28 16:22:43 export npm_config_target_platform=ohos
+  358  2025-02-28 16:22:48 npx napi build --platform --target aarch64-unknown-linux-ohos
+  359  2025-02-28 16:26:22 npx napiclean
+  360  2025-02-28 16:26:34 npx npm clean
+  361  2025-02-28 16:26:48 npx napi‘’ clean
+  362  2025-02-28 16:26:53 npx napi clean
+  363  2025-02-28 16:27:22 npx napi build --platform --target aarch64-unknown-linux-ohos
+  364  2025-02-28 16:28:19 npx napi build  --target aarch64-unknown-linux-ohos
+  365  2025-02-28 16:30:25 npx napi build  --target aarch64-unknown-linux-ohos --release
+  366  2025-02-28 16:31:59 cd ../../
+  367  2025-02-28 16:32:10 npm run build:openharmony
+  368  2025-02-28 16:37:53 ls -l rust/bindings_napi/index.node
+  369  2025-02-28 17:02:41 rm -rf *
+  370  2025-02-28 17:02:51 ls
+  371  2025-02-28 17:16:26 cd ../
+  372  2025-02-28 17:16:34 uname -a
+  373  2025-02-28 17:17:50 ls
+  374  2025-02-28 17:17:58 rm -rf rollup/
+  375  2025-02-28 17:18:01 ls
+  376  2025-02-28 17:18:31 git clone git@github.com:caoyangyicn/rollup.git
+  377  2025-02-28 17:18:52 cd rollup/
+  378  2025-02-28 17:18:58 npm i
+  379  2025-02-28 18:45:27 export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  380  2025-02-28 18:45:27 export CXX=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang++
+  381  2025-02-28 18:45:27 export AR=/home/ubuntu/sdk/native/llvm/bin/llvm-ar
+  382  2025-02-28 18:45:27 export RANLIB=/home/ubuntu/sdk/native/llvm/bin/llvm-ranlib
+  383  2025-02-28 18:45:27 export LINKER=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+  384  2025-02-28 18:45:27 export OHOS_NDK_HOME=/home/ubuntu/sdk
+  385  2025-02-28 18:45:38 echo $LINKER
+  386  2025-02-28 18:45:49 echo $AR
+  387  2025-02-28 18:46:27 cd rust
+  388  2025-02-28 18:46:33 cd bindings_napi/
+  389  2025-02-28 18:46:45 cargo build --target aarch64-unknown-linux-ohos
+  390  2025-02-28 18:47:50 cd ../
+  391  2025-02-28 18:47:54 cargo clean
+  392  2025-02-28 18:47:57 cargo build --target aarch64-unknown-linux-ohos
+  393  2025-02-28 18:49:51 cargo build --target aarch64-unknown-linux-ohos --release
+  394  2025-02-28 18:50:59 cd ../../
+  395  2025-02-28 18:51:28 npm run build:openharmony
+  396  2025-02-28 18:51:36 cd rollup/
+  397  2025-02-28 18:51:37 npm run build:openharmony
+  398  2025-02-28 18:52:57 ls -l rollup.linux-arm64-ohos.node 
+  399  2025-02-28 18:53:20 npm run build:openharmony
+  400  2025-02-28 18:55:47 cd rust
+  401  2025-02-28 18:55:55 cd bindings_napi/
+  402  2025-02-28 18:56:43 napi --target aarch64-unknown-linux-ohos --release
+  403  2025-02-28 18:57:05 npx napi --target aarch64-unknown-linux-ohos --release
+  404  2025-02-28 18:58:58 history >> 1.txt 
+  405  2025-02-28 18:59:10 cd rollup/
+  406  2025-02-28 18:59:12 history >> 1.txt 

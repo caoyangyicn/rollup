@@ -1,0 +1,8 @@
+cargo build --target aarch64-unknown-linux-ohos
+
+export CC=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+export CXX=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang++
+export AR=/home/ubuntu/sdk/native/llvm/bin/llvm-ar
+export RANLIB=/home/ubuntu/sdk/native/llvm/bin/llvm-ranlib
+export LINKER=/home/ubuntu/sdk/native/llvm/bin/aarch64-unknown-linux-ohos-clang
+export OHOS_NDK_HOME=/home/ubuntu/sdk
